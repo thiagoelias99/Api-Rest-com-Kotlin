@@ -1,0 +1,97 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Api-Rest-Com-Kotlin",
+    "dateExported": "2023-08-30T18:49:53.157Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
+            "name": "Topicos",
+            "containerId": "",
+            "created": "2023-08-30T12:28:07.609Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b2ee384d-eb4c-4254-b6aa-8aaa3920ec42",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
+            "name": "Post",
+            "url": "http://localhost:8080/topicos",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-08-30T12:29:07.365Z",
+            "modified": "2023-08-30T16:14:57.060Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"mensagem\": \"\",\n    \"idCurso\": 1,\n    \"idAutor\": 1\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fb2b83ba-8449-4d15-9a64-6b8b7098d844",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
+            "name": "Get",
+            "url": "http://localhost:8080/topicos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-30T12:28:14.652Z",
+            "modified": "2023-08-30T12:28:32.465Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d297628d-f505-4467-9eb0-67d77c1ab028",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
+            "name": "GetId",
+            "url": "http://localhost:8080/topicos/5",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-30T12:28:39.796Z",
+            "modified": "2023-08-30T15:39:40.156Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7a83539d-15c4-4e76-b4f4-379ba01c1cae",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
+            "name": "Put",
+            "url": "http://localhost:8080/topicos",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-08-30T13:42:37.233Z",
+            "modified": "2023-08-30T13:43:59.515Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"id\": 1,\n    \"titulo\": \"Duvida Kotlin Alterado\",\n    \"mensagem\": \"Variaveis em kotlin alterado 2\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "60a7ff94-f7a6-44eb-b5cb-f8681a41d26c",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
+            "name": "Delete",
+            "url": "http://localhost:8080/topicos/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-08-30T13:48:35.823Z",
+            "modified": "2023-08-30T14:17:20.327Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
