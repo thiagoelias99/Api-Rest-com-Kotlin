@@ -1,8 +1,6 @@
 package com.telias.forum.controllers
 
-import com.telias.forum.dto.AtualizaçãoTopicoForm
-import com.telias.forum.dto.NotoTopicoForm
-import com.telias.forum.dto.TopicoView
+import com.telias.forum.dto.*
 import com.telias.forum.services.TopicoService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
@@ -34,7 +32,7 @@ class TopicoController(private val service: TopicoService) {
 
     @PostMapping
     fun cadastrar(
-        @RequestBody @Valid form: NotoTopicoForm,
+        @RequestBody @Valid form: TopicoPost,
         uriBuilder: UriComponentsBuilder
     ): ResponseEntity<TopicoView>{
         val topicoView = service.cadastrar(form)
@@ -43,7 +41,7 @@ class TopicoController(private val service: TopicoService) {
     }
 
     @PutMapping
-    fun atualizar(@RequestBody @Valid form: AtualizaçãoTopicoForm): ResponseEntity<TopicoView>{
+    fun atualizar(@RequestBody @Valid form: TopicoPut): ResponseEntity<TopicoView>{
         val topicoView = service.atualizar(form)
         return ResponseEntity.ok(topicoView)
     }
