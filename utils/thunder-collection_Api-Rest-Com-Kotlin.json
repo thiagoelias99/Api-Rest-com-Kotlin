@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Api-Rest-Com-Kotlin",
-    "dateExported": "2023-08-30T18:49:53.157Z",
+    "dateExported": "2023-08-31T23:10:54.366Z",
     "version": "1.1",
     "folders": [
         {
@@ -10,6 +10,13 @@
             "containerId": "",
             "created": "2023-08-30T12:28:07.609Z",
             "sortNum": 10000
+        },
+        {
+            "_id": "300141dc-3783-4b46-93ee-59df360b5b73",
+            "name": "Usuarios",
+            "containerId": "",
+            "created": "2023-08-31T23:05:24.403Z",
+            "sortNum": 20000
         }
     ],
     "requests": [
@@ -22,12 +29,31 @@
             "method": "POST",
             "sortNum": 5000,
             "created": "2023-08-30T12:29:07.365Z",
-            "modified": "2023-08-30T16:14:57.060Z",
+            "modified": "2023-08-31T22:15:14.297Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "  {\n    \"mensagem\": \"\",\n    \"idCurso\": 1,\n    \"idAutor\": 1\n  }",
+                "raw": "  {\n    \"titulo\": \"Novo item\",\n    \"mensagem\": \"Novo item\",\n    \"idCurso\": 1,\n    \"idAutor\": 1\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b24f3d10-15eb-4dd8-9d76-ca8b71384d3d",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "300141dc-3783-4b46-93ee-59df360b5b73",
+            "name": "Post",
+            "url": "http://localhost:8080/usuarios",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-08-31T23:05:24.403Z",
+            "modified": "2023-08-31T23:07:33.544Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nome\": \"Gi\",\n    \"email\": \"gi@email.com\"\n}",
                 "form": []
             },
             "tests": []
@@ -47,6 +73,20 @@
             "tests": []
         },
         {
+            "_id": "32bff074-5237-4c28-8039-109e68a65202",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "300141dc-3783-4b46-93ee-59df360b5b73",
+            "name": "Get",
+            "url": "http://localhost:8080/usuarios",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-31T23:05:24.404Z",
+            "modified": "2023-08-31T23:05:41.109Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
             "_id": "d297628d-f505-4467-9eb0-67d77c1ab028",
             "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
             "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
@@ -56,6 +96,20 @@
             "sortNum": 20000,
             "created": "2023-08-30T12:28:39.796Z",
             "modified": "2023-08-30T15:39:40.156Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0d904c3a-bf4f-4e59-9f4b-4a1b6d0bd073",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "300141dc-3783-4b46-93ee-59df360b5b73",
+            "name": "GetId",
+            "url": "http://localhost:8080/usuarios/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-31T23:05:24.405Z",
+            "modified": "2023-08-31T23:08:24.063Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -80,6 +134,25 @@
             "tests": []
         },
         {
+            "_id": "8bc4b410-295c-418d-b5e4-01d277adc9c8",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "300141dc-3783-4b46-93ee-59df360b5b73",
+            "name": "Put",
+            "url": "http://localhost:8080/usuarios",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-08-31T23:05:24.406Z",
+            "modified": "2023-08-31T23:09:34.262Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 1,\n  \"nome\": \"Sara Costa\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
             "_id": "60a7ff94-f7a6-44eb-b5cb-f8681a41d26c",
             "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
             "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
@@ -89,6 +162,20 @@
             "sortNum": 50000,
             "created": "2023-08-30T13:48:35.823Z",
             "modified": "2023-08-30T14:17:20.327Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "eea92d62-f7ad-4ea5-b470-f4581736e614",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "300141dc-3783-4b46-93ee-59df360b5b73",
+            "name": "Delete",
+            "url": "http://localhost:8080/usuarios/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-08-31T23:05:24.407Z",
+            "modified": "2023-08-31T23:10:42.322Z",
             "headers": [],
             "params": [],
             "tests": []

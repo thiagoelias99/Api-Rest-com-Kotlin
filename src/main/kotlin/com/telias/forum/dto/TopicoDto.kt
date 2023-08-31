@@ -25,7 +25,7 @@ class TopicoDto(
             titulo = topicoPost.titulo,
             mensagem = topicoPost.mensagem,
             curso = cursoService.buscarPorId(topicoPost.idCurso),
-            autor = usuarioService.buscarPorId(topicoPost.idAutor),
+            autor = usuarioService.buscarPorId2(topicoPost.idAutor)!!,
         )
     }
 
