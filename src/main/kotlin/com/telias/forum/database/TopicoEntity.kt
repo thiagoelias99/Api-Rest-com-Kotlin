@@ -7,7 +7,9 @@ import org.springframework.stereotype.Component
 import java.util.*
 
 @Component
-data class TopicoEntity (private var topicos: List<Topico> = ArrayList()){
+data class TopicoEntity (
+    private var topicos: List<Topico> = ArrayList()
+){
 
     init {
         val topico1 = Topico(

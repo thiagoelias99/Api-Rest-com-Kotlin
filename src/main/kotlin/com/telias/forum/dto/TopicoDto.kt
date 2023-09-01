@@ -52,7 +52,9 @@ class TopicoDto(
             titulo = topico.titulo,
             mensagem = topico.mensagem,
             dataCriacao = topico.dataCriacao,
-            status = topico.status
+            status = topico.status,
+            curso = topico.curso.nome,
+            autor = topico.autor.nome
         )
     }
 }
@@ -77,5 +79,7 @@ class TopicoView(
     var titulo: String,
     var mensagem: String,
     val status: StatusTopico,
+    val curso: String,
+    val autor: String,
     val dataCriacao: LocalDateTime
 )
