@@ -14,7 +14,6 @@ import java.time.LocalDateTime
 
 @Component
 class TopicoDto(
-    private val topicos: TopicoEntity,
     private val cursoService: CursoService,
     private val usuarioService: UsuarioService,
 ) {
@@ -26,26 +25,6 @@ class TopicoDto(
             autor = usuarioService.buscarPorId2(topicoPost.idAutor),
         )
     }
-
-    fun fromPut(topicoPut: TopicoPut): Topico {
-        val topico =
-            topicos.getList().stream().filter { t -> t.id == topicoPut.id }.findFirst().orElseThrow { NotFoundException() }
-
-        topico?.let { topico ->
-            return Topico(
-                id = topico.id,
-                titulo = topicoPut.titulo,
-                mensagem = topicoPut.mensagem,
-                autor = topico.autor,
-                curso = topico.curso,
-                dataCriacao = topico.dataCriacao,
-                status = topico.status,
-                respostas = topico.respostas
-            )
-        }
-        throw NotFoundException()
-    }
-
     fun toView(topico: Topico): TopicoView {
         return TopicoView(
             id = topico.id!!,
