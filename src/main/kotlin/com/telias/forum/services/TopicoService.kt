@@ -1,15 +1,13 @@
 package com.telias.forum.services
 
 import com.telias.forum.database.TopicoEntity
-import com.telias.forum.dto.*
+import com.telias.forum.dto.TopicoDto
+import com.telias.forum.dto.TopicoPost
+import com.telias.forum.dto.TopicoPut
+import com.telias.forum.dto.TopicoView
 import com.telias.forum.exception.NotFoundException
-import com.telias.forum.models.Curso
-import com.telias.forum.models.Topico
-import com.telias.forum.models.Usuario
 import org.springframework.stereotype.Service
-import java.util.*
 import java.util.stream.Collectors
-import kotlin.collections.ArrayList
 
 @Service
 class TopicoService(

@@ -1,6 +1,5 @@
 package com.telias.forum.database
 
-import com.telias.forum.models.Topico
 import com.telias.forum.models.Usuario
 import org.springframework.stereotype.Component
 import java.util.*
@@ -26,8 +25,6 @@ data class UsuarioEntity (private var usuarios: List<Usuario> = ArrayList()){
             nome = "Ana",
             email = "ana@email.com"
         )
-
-
 
         usuarios = Arrays.asList(usuario1, usuario2, usuario3)
     }

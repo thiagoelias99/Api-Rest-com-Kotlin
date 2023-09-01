@@ -1,8 +1,6 @@
 package com.telias.forum.database
 
 import com.telias.forum.models.Curso
-import com.telias.forum.models.Topico
-import com.telias.forum.models.Usuario
 import org.springframework.stereotype.Component
 import java.util.*
 

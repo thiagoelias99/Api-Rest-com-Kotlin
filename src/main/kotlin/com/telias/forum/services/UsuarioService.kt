@@ -1,11 +1,13 @@
 package com.telias.forum.services
 
 import com.telias.forum.database.UsuarioEntity
-import com.telias.forum.dto.*
+import com.telias.forum.dto.UsuarioDto
+import com.telias.forum.dto.UsuarioPost
+import com.telias.forum.dto.UsuarioPut
+import com.telias.forum.dto.UsuarioView
 import com.telias.forum.exception.NotFoundException
 import com.telias.forum.models.Usuario
 import org.springframework.stereotype.Service
-import java.util.*
 import java.util.stream.Collectors
 
 @Service

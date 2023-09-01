@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Api-Rest-Com-Kotlin",
-    "dateExported": "2023-08-31T23:10:54.366Z",
+    "dateExported": "2023-09-01T11:46:17.666Z",
     "version": "1.1",
     "folders": [
         {
@@ -17,6 +17,13 @@
             "containerId": "",
             "created": "2023-08-31T23:05:24.403Z",
             "sortNum": 20000
+        },
+        {
+            "_id": "0e5920bf-725d-4629-a528-e0f152b783df",
+            "name": "Cursos",
+            "containerId": "",
+            "created": "2023-09-01T11:39:48.563Z",
+            "sortNum": 30000
         }
     ],
     "requests": [
@@ -59,6 +66,25 @@
             "tests": []
         },
         {
+            "_id": "0f157589-d4fd-47ca-9cda-f1538d2fe0d1",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "0e5920bf-725d-4629-a528-e0f152b783df",
+            "name": "Post",
+            "url": "http://localhost:8080/cursos",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-09-01T11:39:48.563Z",
+            "modified": "2023-09-01T11:41:20.599Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nome\": \"React\",\n    \"categoria\": \"Front End\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
             "_id": "fb2b83ba-8449-4d15-9a64-6b8b7098d844",
             "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
             "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
@@ -87,6 +113,20 @@
             "tests": []
         },
         {
+            "_id": "f0e3da4f-cfe4-4e83-a3d5-45ffcab8ab04",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "0e5920bf-725d-4629-a528-e0f152b783df",
+            "name": "Get",
+            "url": "http://localhost:8080/cursos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-01T11:39:48.564Z",
+            "modified": "2023-09-01T11:40:03.964Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
             "_id": "d297628d-f505-4467-9eb0-67d77c1ab028",
             "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
             "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
@@ -110,6 +150,20 @@
             "sortNum": 20000,
             "created": "2023-08-31T23:05:24.405Z",
             "modified": "2023-08-31T23:08:24.063Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "44706cb7-c958-46ab-89c4-96fb15835dfb",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "0e5920bf-725d-4629-a528-e0f152b783df",
+            "name": "GetId",
+            "url": "http://localhost:8080/cursos/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-09-01T11:39:48.565Z",
+            "modified": "2023-09-01T11:40:08.608Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -153,6 +207,25 @@
             "tests": []
         },
         {
+            "_id": "b215fc6e-1624-4b69-8a71-aa593e3cc16d",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "0e5920bf-725d-4629-a528-e0f152b783df",
+            "name": "Put",
+            "url": "http://localhost:8080/cursos",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-09-01T11:39:48.566Z",
+            "modified": "2023-09-01T11:42:00.356Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"id\": 4,\n    \"nome\": \"React\",\n    \"categoria\": \"Front End 2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
             "_id": "60a7ff94-f7a6-44eb-b5cb-f8681a41d26c",
             "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
             "containerId": "b82c67de-a37e-41d8-8f18-b0036740b3b3",
@@ -176,6 +249,20 @@
             "sortNum": 50000,
             "created": "2023-08-31T23:05:24.407Z",
             "modified": "2023-08-31T23:10:42.322Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0301758c-1c69-4486-8166-a880b1b97c72",
+            "colId": "27d0beb8-51bd-4fe4-a2ec-793c3af1b400",
+            "containerId": "0e5920bf-725d-4629-a528-e0f152b783df",
+            "name": "Delete",
+            "url": "http://localhost:8080/cursos/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-09-01T11:39:48.567Z",
+            "modified": "2023-09-01T11:40:15.603Z",
             "headers": [],
             "params": [],
             "tests": []

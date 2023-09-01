@@ -3,7 +3,6 @@ package com.telias.forum.dto
 import com.telias.forum.database.CursoEntity
 import com.telias.forum.exception.NotFoundException
 import com.telias.forum.models.Curso
-import com.telias.forum.models.Usuario
 import jakarta.validation.constraints.NotEmpty
 import jakarta.validation.constraints.NotNull
 import org.springframework.stereotype.Component

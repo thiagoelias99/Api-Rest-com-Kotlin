@@ -2,11 +2,9 @@ package com.telias.forum.dto
 
 import com.telias.forum.database.TopicoEntity
 import com.telias.forum.exception.NotFoundException
-import com.telias.forum.models.Resposta
 import com.telias.forum.models.StatusTopico
 import com.telias.forum.models.Topico
 import com.telias.forum.services.CursoService
-import com.telias.forum.services.TopicoService
 import com.telias.forum.services.UsuarioService
 import jakarta.validation.constraints.NotEmpty
 import jakarta.validation.constraints.NotNull
