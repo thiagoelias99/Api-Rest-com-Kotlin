@@ -23,7 +23,7 @@ class UsuarioService(
             .orElseThrow { NotFoundException(notFoundMessage) }
     }
 
-    fun buscarPorId2(id: Long): Usuario? {
+    fun buscarPorId2(id: Long): Usuario {
         return usuarios.getList().stream().filter { t -> t.id == id }.findFirst()
             .orElseThrow { NotFoundException(notFoundMessage) }
     }
